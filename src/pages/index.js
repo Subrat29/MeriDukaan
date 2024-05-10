@@ -14,3 +14,5 @@ export { default as ThankYou } from "./ThankYou";
 export { default as OrderHistory } from "./OrderHistory";
 export { default as BecomeSeller } from "./BecomeSeller";
 export { default as SellerInfo } from "./Seller";
+export { default as AddShops } from "./AddShops";
+export { default as AddProducts } from "./AddProducts";

@@ -73,6 +73,11 @@ const Header = () => {
             <span className="text-2xl max-sm:text-lg text-accent-content font-bold tracking-wide">
               Apna Shahar! Apni Dukaan!
             </span>
+            <span className="inline-block rounded-md shadow-sm">
+              <a href="https://app.eraser.io/workspace/b73GX2wj1SgBxfOwYcod" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                HLD
+              </a>
+            </span>
           </li>
         </ul>
       </div>

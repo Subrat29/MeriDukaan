@@ -16,6 +16,8 @@ import {
   OrderHistory,
   BecomeSeller,
   SellerInfo,
+  AddShops,
+  AddProducts
 } from "./pages";
 import { landingLoader } from "./pages/Landing";
 import { singleProductLoader } from "./pages/SingleProduct";
@@ -45,6 +47,14 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "add-shops",
+        element: <AddShops />
+      },
+      {
+        path: "add-products",
+        element: <AddProducts />
       },
       {
         path: "login",
