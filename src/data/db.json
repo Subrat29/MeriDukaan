@@ -805,46 +805,52 @@
   ],
   "shops": [
     {
-      "id": 1,
-      "name": "Raj Shoes Shop",
-      "Owner": "Raj Katiyar",
-      "adress": "kamla nagar, Agra",
-      "phone": "061123231",
-      "email": "a@test.com",
-      "products": [
-        204525438
-      ]
+      "id": "kMirDQvDd9UBH6aPBIa0u",
+      "name": "ss2",
+      "seller": "shdjhsdsad",
+      "description": "sadasdasdasd",
+      "email": "ss2@s.com",
+      "phone": "2323233",
+      "adress": "sdfsdfsdfdsffsdff",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "products": []
     },
     {
-      "id": 2,
-      "name": "Akash Shoes Store",
-      "Owner": "Akash Gupta",
-      "adress": "MLA Hostel, Agra",
-      "phone": "061126231",
-      "email": "b@test.com",
-      "products": [
-        204525438
-      ]
+      "id": "kmeDE2l8J0B_OGBkYx0rs",
+      "name": "sss3",
+      "seller": "sdasdasdasdsad",
+      "description": "asdasdasdasd",
+      "email": "asd@s.com",
+      "phone": "34334343",
+      "adress": "sgfgsdfsdfsdf",
+      "state": "Uttar Pradesh",
+      "district": "Aligarh",
+      "products": []
     },
     {
-      "id": 3,
-      "name": "Ayush Fashion Store",
-      "adress": "bhagwan Talkies, Agra",
-      "phone": "065623115",
-      "email": "c@test.com",
-      "products": [
-        204525438
-      ]
+      "id": "rU1MH3sV5P2iSzGKQZwyW",
+      "name": "dfsdfsdfsdfsdfsdf",
+      "seller": "dsfsdfsfsdfsdfdf",
+      "description": "sdfsdfsdfsdfsdfsdf",
+      "email": "subratyadav29@gmail.com",
+      "phone": "07820043752",
+      "adress": "Shastri Nagar, Agra",
+      "state": "Uttar Pradesh",
+      "district": "agra",
+      "products": []
     },
     {
-      "id": 4,
-      "name": "Garima Fashion Shop",
-      "adress": "Dayal Bagh, Agra",
-      "phone": "061123231",
-      "email": "d@test.com",
-      "products": [
-        204525438
-      ]
+      "id": "-SqjYOXSLHv1LBz-20w52",
+      "name": "dfsdfsdfsdfsdfsdf",
+      "seller": "dsfsdfsfsdfsdfdf",
+      "description": "sdfsdfsdfsdfsdfsdf",
+      "email": "subratyadav29@gmail.com",
+      "phone": "07820043752",
+      "adress": "Shastri Nagar, Agra",
+      "state": "Uttar Pradesh",
+      "district": "agra",
+      "products": []
     }
   ]
 }
