@@ -15,12 +15,10 @@ import parse from "html-react-parser";
 import { nanoid } from "nanoid";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../features/cart/cartSlice";
-import {
-  updateWishlist,
-  removeFromWishlist,
-} from "../features/wishlist/wishlistSlice";
+import { updateWishlist, removeFromWishlist } from "../features/wishlist/wishlistSlice";
 import { toast } from "react-toastify";
 import { store } from "../store";
+import ComparisonTable from "../components/ComaprisonData";
 
 export const singleProductLoader = async ({ params }) => {
   const { id } = params;
@@ -58,8 +56,10 @@ const SingleProduct = () => {
     amount: quantity,
     selectedSize: size || productData?.availableSizes[0],
     isInWishList:
-      wishItems.find((item) => item.id === productData?.id + size) !==
-      undefined,
+      wishItems.find((item) => item.id === productData?.id + size) !== undefined,
+    shopId: productData?.shop?.id,
+    shopName: productData?.shop?.name,
+    othervendorsData: productData?.othervendorsData,
   };
 
   for (let i = 0; i < productData?.rating; i++) {
@@ -73,7 +73,6 @@ const SingleProduct = () => {
       );
       const userObj = getResponse.data;
 
-      
       userObj.userWishlist = userObj.userWishlist || [];
 
       userObj.userWishlist.push(product);
@@ -83,7 +82,6 @@ const SingleProduct = () => {
         userObj
       );
 
-      
       store.dispatch(updateWishlist({ userObj }));
       toast.success("Product added to the wishlist!");
     } catch (error) {
@@ -99,9 +97,7 @@ const SingleProduct = () => {
 
     userObj.userWishlist = userObj.userWishlist || [];
 
-    const newWishlist = userObj.userWishlist.filter(
-      (item) => product.id !== item.id
-    );
+    const newWishlist = userObj.userWishlist.filter((item) => product.id !== item.id);
 
     userObj.userWishlist = newWishlist;
 
@@ -110,7 +106,6 @@ const SingleProduct = () => {
       userObj
     );
 
-    
     store.dispatch(removeFromWishlist({ userObj }));
     toast.success("Product removed from the wishlist!");
   };
@@ -142,9 +137,7 @@ const SingleProduct = () => {
             {productData?.name}
           </h2>
           <SingleProductRating rating={rating} productData={productData} />
-          <p className="text-3xl text-error">
-            ${productData?.price?.current?.value}
-          </p>
+          <p className="text-3xl text-error">${productData?.price?.current?.value}</p>
           <div className="text-xl max-sm:text-lg text-accent-content">
             {parse(productData?.description)}
           </div>
@@ -172,9 +165,7 @@ const SingleProduct = () => {
                 if (loginState) {
                   dispatch(addToCart(product));
                 } else {
-                  toast.error(
-                    "You must be logged in to add products to the cart"
-                  );
+                  toast.error("You must be logged in to add products to the cart");
                 }
               }}
             >
@@ -205,9 +196,7 @@ const SingleProduct = () => {
                   if (loginState) {
                     addToWishlistHandler(product);
                   } else {
-                    toast.error(
-                      "You must be logged in to add products to the wishlist"
-                    );
+                    toast.error("You must be logged in to add products to the wishlist");
                   }
                 }}
               >
@@ -239,14 +228,22 @@ const SingleProduct = () => {
               Category: {productData?.category}
             </div>
             <div className="badge bg-gray-700 badge-lg font-bold text-white p-5 mt-2">
-              Production Date:{" "}
-              {productData?.productionDate?.substring(0, 10)}
+              Production Date: {productData?.productionDate?.substring(0, 10)}
+            </div>
+            <div className="badge bg-gray-700 badge-lg font-bold text-white p-5 mt-2">
+              <p>
+                Sold By: <Link to={`/shops/${product.shopId}`}>{product.shopName}</Link>
+              </p>
             </div>
           </div>
         </div>
       </div>
 
       <SingleProductReviews rating={rating} productData={productData} />
+      <ComparisonTable
+        productId={product.id}
+        othervendorsData={product.othervendorsData}
+      />
     </>
   );
 };
