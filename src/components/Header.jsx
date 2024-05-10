@@ -69,8 +69,8 @@ const Header = () => {
               Ietagra@test.com
             </span>
           </li> */}
-          <li class="hover:transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-            <span class="text-2xl max-sm:text-lg text-accent-content font-bold tracking-wide">
+          <li className="hover:transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+            <span className="text-2xl max-sm:text-lg text-accent-content font-bold tracking-wide">
               Mera Shahar! Meri Dukaan!
             </span>
           </li>
@@ -223,7 +223,7 @@ const Header = () => {
               </li>
               <li className="text-xl">
                 <NavLink className="text-accent-content" to="/shop">
-                  Shop
+                  Shopppppp
                 </NavLink>
               </li>
               <li className="text-xl">
