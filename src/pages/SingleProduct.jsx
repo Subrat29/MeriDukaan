@@ -59,7 +59,7 @@ const SingleProduct = () => {
       wishItems.find((item) => item.id === productData?.id + size) !== undefined,
     shopId: productData?.shop?.id,
     shopName: productData?.shop?.name,
-    othervendorsData: productData?.othervendorsData,
+    othervendorsdata: productData?.otherVendorsData,
   };
 
   for (let i = 0; i < productData?.rating; i++) {
@@ -109,6 +109,8 @@ const SingleProduct = () => {
     store.dispatch(removeFromWishlist({ userObj }));
     toast.success("Product removed from the wishlist!");
   };
+
+  console.log("other vendors data", product.othervendorsdata);
 
   return (
     <>
@@ -242,7 +244,7 @@ const SingleProduct = () => {
       <SingleProductReviews rating={rating} productData={productData} />
       <ComparisonTable
         productId={product.id}
-        othervendorsData={product.othervendorsData}
+        othervendorsData={product.othervendorsdata}
       />
     </>
   );
