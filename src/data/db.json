@@ -7,6 +7,8 @@
       "isInStock": true,
       "gender": "male",
       "category": "shoes",
+      "state": "Rajasthan",
+      "district": "Jaipur",
       "availableSizes": [
         37,
         38,
@@ -143,6 +145,8 @@
       "isInStock": true,
       "gender": "male",
       "category": "shoes",
+      "state": "Uttarakhand",
+      "district": "Dehradun",
       "availableSizes": [
         37,
         38,
@@ -279,6 +283,8 @@
       "isInStock": true,
       "gender": "male",
       "category": "t-shirts",
+      "state": "Haryana",
+      "district": "Gurugram",
       "availableSizes": [
         "XS",
         "S",
@@ -413,6 +419,8 @@
       "isInStock": true,
       "gender": "male",
       "category": "jackets",
+      "state": "Gujarat",
+      "district": "Ahmedabad",
       "availableSizes": [
         "XS",
         "S",

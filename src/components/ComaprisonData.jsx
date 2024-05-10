@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const ComparisonTable = ({ productId, otherVendorsData }) => {
+const ComparisonTable = ({ productId, othervendorsData }) => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
@@ -51,7 +51,25 @@ const ComparisonTable = ({ productId, otherVendorsData }) => {
                 <td className="border px-4 py-2">{product.shop.name}</td>
               </tr>
               {/* Fetch and compare data from other platforms */}
-
+              {othervendorsData.map((vendor, index) => (
+                <tr key={index}>
+                  <td className="border px-4 py-2">{vendor.shop.name}</td>
+                  <td className="border px-4 py-2">{vendor.price.current.text}</td>
+                  <td className="border px-4 py-2">{vendor.rating}</td>
+                  <td className="border px-4 py-2">
+                    <ul>
+                      {vendor.reviews.map((review, index) => (
+                        <li key={index} className="mb-2">
+                          <strong>{review.username}</strong>
+                          <br />
+                          {review.reviewText}
+                        </li>
+                      ))}
+                    </ul>
+                  </td>
+                  <td className="border px-4 py-2">{vendor.shop.name}</td>
+                </tr>
+              ))}
               {/* Replace this section with data from other platforms */}
             </tbody>
           </table>

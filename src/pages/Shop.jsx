@@ -26,6 +26,8 @@ export const shopLoader = async ({ request }) => {
     category: params.category ?? "all",
     date: mydate ?? "",
     gender: params.gender ?? "all",
+    state: params.state ?? "all",
+    district: params.district ?? "all",
     order: params.order ?? "",
     price: params.price ?? "all",
     search: params.search ?? "",
@@ -39,6 +41,8 @@ export const shopLoader = async ({ request }) => {
     (filterObj.brand !== "all" ? `&brandName=${filterObj.brand}` : "") +
     (filterObj.category !== "all" ? `&category=${filterObj.category}` : "") +
     (filterObj.gender !== "all" ? `&gender=${filterObj.gender}` : ``) +
+    (filterObj.state != "all" ? `&state=${filterObj.state}` : ``) +
+    (filterObj.district != "all" ? `&district=${filterObj.district}` : ``) +
     (filterObj.search != "" ? `&q=${encodeURIComponent(filterObj.search)}` : ``) +
     (filterObj.order ? `&_sort=price.current.value` : "") + // Check if the order exists, then sort it in ascending order. After that, the API response will be modified if descending order or any other filter is selected.
     (filterObj.in_stock ? `&isInStock` : "") +
