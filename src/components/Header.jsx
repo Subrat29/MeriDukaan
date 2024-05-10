@@ -71,7 +71,7 @@ const Header = () => {
           </li> */}
           <li className="hover:transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
             <span className="text-2xl max-sm:text-lg text-accent-content font-bold tracking-wide">
-              Mera Shahar! Meri Dukaan!
+              Apna Shahar! Apni Dukaan!
             </span>
           </li>
         </ul>
