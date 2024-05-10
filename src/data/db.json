@@ -547,6 +547,145 @@
           ]
         }
       ]
+    },
+    {
+      "id": "aKQ5bFVIxoAleTqdFY7CN",
+      "name": "Kurta Pajama",
+      "seller": "Subrat",
+      "description": "This is a cloth.",
+      "isInStock": true,
+      "gender": "male",
+      "category": "cloth",
+      "state": "Rajasthan",
+      "district": "Jaipur",
+      "availableSizes": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "rating": 5,
+      "reviews": [
+        {
+          "username": "Errol Grabber",
+          "userImage": "/src/assets/user profile photo 6.jpg",
+          "location": "USA",
+          "rating": 1,
+          "date": "January 31, 2022",
+          "reviewTitle": "I am not happy with this product...!!!",
+          "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, vero distinctio maxime quidem aperiam ut expedita voluptate similique, officia, maiores a minus fugit explicabo dolor iure quisquam in voluptatibus ipsa facilis aliquid. Labore nulla quibusdam adipisci eligendi eum accusamus repellat!"
+        },
+        {
+          "username": "Kristofer Comi",
+          "userImage": "/src/assets/user profile photo 7.jpg",
+          "location": "Argentina",
+          "rating": 5,
+          "date": "January 31, 2022",
+          "reviewTitle": "Excellent product...!!!",
+          "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, vero distinctio maxime quidem aperiam ut expedita voluptate similique, officia, maiores a minus fugit explicabo dolor iure quisquam in voluptatibus ipsa facilis aliquid. Labore nulla quibusdam adipisci eligendi eum accusamus repellat!"
+        },
+        {
+          "username": "Luciano Haarman",
+          "userImage": "/src/assets/user profile photo 2.jpg",
+          "location": "Greece",
+          "rating": 5,
+          "date": "January 31, 2022",
+          "reviewTitle": "I am very happy...!!!",
+          "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, vero distinctio maxime quidem aperiam ut expedita voluptate similique, officia, maiores a minus fugit explicabo dolor iure quisquam in voluptatibus ipsa facilis aliquid. Labore nulla quibusdam adipisci eligendi eum accusamus repellat!"
+        }
+      ],
+      "totalReviewCount": 2710,
+      "productionDate": "2022-10-31T09:00:00.594Z",
+      "price": {
+        "current": {
+          "value": 110,
+          "text": "$110.00"
+        }
+      },
+      "brandName": "Nike",
+      "productCode": 127493614,
+      "imageUrl": "images.asos-media.com/products/nike-air-force-1-07-sneakers-in-white-and-black/204525438-1-black",
+      "additionalImageUrls": [
+        "images.asos-media.com/products/nike-air-force-1-07-sneakers-in-white-and-black/204525438-1-black",
+        "images.asos-media.com/products/nike-air-force-1-07-sneakers-in-white-and-black/204525438-2",
+        "images.asos-media.com/products/nike-air-force-1-07-sneakers-in-white-and-black/204525438-3",
+        "images.asos-media.com/products/nike-air-force-1-07-sneakers-in-white-and-black/204525438-4"
+      ],
+      "shop": {
+        "id": 1,
+        "name": "Raj Shoes Shop"
+      },
+      "otherVendorsData": [
+        {
+          "shop": {
+            "id": 2,
+            "name": "Akash Shoes Store"
+          },
+          "price": {
+            "current": {
+              "value": 115,
+              "text": "$115.00"
+            }
+          },
+          "rating": 4.5,
+          "reviews": [
+            {
+              "username": "John Doe",
+              "userImage": "/src/assets/user-profile.jpg",
+              "location": "Canada",
+              "rating": 4,
+              "date": "February 15, 2024",
+              "reviewTitle": "Great quality but a bit expensive",
+              "reviewText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tellus eu libero congue interdum. Nullam ultricies, elit vel tempus sollicitudin, nisl odio vestibulum justo, sit amet pharetra mi lacus ac ipsum."
+            },
+            {
+              "username": "Alice Smith",
+              "userImage": "/src/assets/user-profile.jpg",
+              "location": "United Kingdom",
+              "rating": 5,
+              "date": "February 12, 2024",
+              "reviewTitle": "Best shoes ever!",
+              "reviewText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tellus eu libero congue interdum. Nullam ultricies, elit vel tempus sollicitudin, nisl odio vestibulum justo, sit amet pharetra mi lacus ac ipsum."
+            }
+          ]
+        },
+        {
+          "shop": {
+            "id": 3,
+            "name": "Fashion Footwear"
+          },
+          "price": {
+            "current": {
+              "value": 105,
+              "text": "$105.00"
+            }
+          },
+          "rating": 4.2,
+          "reviews": [
+            {
+              "username": "Emily Brown",
+              "userImage": "/src/assets/user-profile.jpg",
+              "location": "Australia",
+              "rating": 4,
+              "date": "February 10, 2024",
+              "reviewTitle": "Good shoes, but took a while to deliver",
+              "reviewText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tellus eu libero congue interdum. Nullam ultricies, elit vel tempus sollicitudin, nisl odio vestibulum justo, sit amet pharetra mi lacus ac ipsum."
+            },
+            {
+              "username": "David Wilson",
+              "userImage": "/src/assets/user-profile.jpg",
+              "location": "Germany",
+              "rating": 4.5,
+              "date": "February 8, 2024",
+              "reviewTitle": "Comfortable and stylish",
+              "reviewText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tellus eu libero congue interdum. Nullam ultricies, elit vel tempus sollicitudin, nisl odio vestibulum justo, sit amet pharetra mi lacus ac ipsum."
+            }
+          ]
+        }
+      ]
     }
   ],
   "user": [
