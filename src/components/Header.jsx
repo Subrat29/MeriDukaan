@@ -228,7 +228,12 @@ const Header = () => {
               </li>
               <li className="text-xl">
                 <NavLink className="text-accent-content" to="/shop">
-                  Shopppppp
+                  Products
+                </NavLink>
+              </li>
+              <li className="text-xl">
+                <NavLink className="text-accent-content" to="/store">
+                  Store
                 </NavLink>
               </li>
               <li className="text-xl">
@@ -269,7 +274,10 @@ const Header = () => {
             Home
           </NavLink>
           <NavLink className="text-accent-content" to="/shop">
-            Shop
+            Products
+          </NavLink>
+          <NavLink className="text-accent-content" to="/store">
+            Store
           </NavLink>
           <NavLink className="text-accent-content" to="/become-seller">
             Become a Seller

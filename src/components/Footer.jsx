@@ -15,7 +15,10 @@ const Footer = () => {
           Home
         </Link>
         <Link to="/shop" className="link link-hover text-2xl max-md:text-xl text-accent-content" onClick={() => window.scrollTo(0, 0)}>
-          Shop
+          Products
+        </Link>
+        <Link to="/store" className="link link-hover text-2xl max-md:text-xl text-accent-content" onClick={() => window.scrollTo(0, 0)}>
+          Store
         </Link>
         <Link to="/become-seller" className="link link-hover text-2xl max-md:text-xl text-accent-content" onClick={() => window.scrollTo(0, 0)}>
           Become a Seller

@@ -16,3 +16,4 @@ export { default as BecomeSeller } from "./BecomeSeller";
 export { default as SellerInfo } from "./Seller";
 export { default as AddShops } from "./AddShops";
 export { default as AddProducts } from "./AddProducts";
+export { default as Store } from "./Store";

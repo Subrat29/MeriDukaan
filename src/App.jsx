@@ -17,7 +17,8 @@ import {
   BecomeSeller,
   SellerInfo,
   AddShops,
-  AddProducts
+  AddProducts,
+  Store
 } from "./pages";
 import { landingLoader } from "./pages/Landing";
 import { singleProductLoader } from "./pages/SingleProduct";
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
       {
         path: "shop",
         element: <Shop />,
+        loader: shopLoader,
+      },
+      {
+        path: "store",
+        element: <Store />,
         loader: shopLoader,
       },
       {
