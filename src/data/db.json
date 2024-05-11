@@ -953,15 +953,15 @@
   "shops": [
     {
       "id": "PUi3wPUkZLM2c4MsXrETg",
-      "name": "shop1",
-      "description": "sbkjsdvsjkddf",
-      "seller": "seller1",
+      "name": "Rajesh Shop",
+      "description": "This shop is well known shop in surat city, it has highly rated Products...",
+      "seller": "Rajesh Yadav",
       "state": "Gujarat",
       "district": "Surat",
-      "adress": "djfkdj fkdsjfkd fk dkjf ",
-      "phone": "1212121",
-      "email": "s1@s.com",
-      "website": "www.abcshop.com",
+      "adress": "Kuldeep Vihar, Ramghat Road, Surat",
+      "phone": "8785376537",
+      "email": "rajesh23@gmail.com",
+      "website": "www.rajeshshop.com",
       "openingHours": {
         "Monday": "9:00 AM - 6:00 PM",
         "Tuesday": "9:00 AM - 6:00 PM",
@@ -971,7 +971,7 @@
         "Saturday": "9:00 AM - 6:00 PM",
         "Sunday": "Closed"
       },
-      "rating": 4.8,
+      "rating": 4.3,
       "totalReviewCount": 102,
       "products": [
         {
@@ -981,7 +981,7 @@
           "price": {
             "value": 110,
             "currency": "USD",
-            "text": "$110.00"
+            "text": "Rs110.00"
           },
           "imageUrl": "images.asos-media.com/products/nike-air-force-1-07-sneakers-in-white-and-black/204525438-1-black",
           "rating": 5,
@@ -1036,15 +1036,15 @@
     },
     {
       "id": "q1Re4sygCVIFBPmoIFgPr",
-      "name": "Shop2",
-      "description": "kjdkjdkf kjdkfjkdjfk",
-      "seller": "anuj",
+      "name": "Karishma Store",
+      "description": "This shop is well known shop in surat city, it has highly rated Products...",
+      "seller": "Karishma",
       "state": "Haryana",
       "district": "Panipat",
-      "adress": "jkdjksdjlkfjdkjf kdjfkjdsk",
-      "phone": "2112121",
-      "email": "a@a.com",
-      "website": "www.abcshop.com",
+      "adress": "Panipat Institute of Technology, Samalkha, Panipat",
+      "phone": "9876545678",
+      "email": "karishmastore@gmail.com",
+      "website": "www.karishmashop.com",
       "openingHours": {
         "Monday": "9:00 AM - 6:00 PM",
         "Tuesday": "9:00 AM - 6:00 PM",

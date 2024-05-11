@@ -4,9 +4,9 @@ const StoreElement = ({ store }) => {
   const { id, name, description, seller, state, district, address, phone, email, website, openingHours, rating, totalReviewCount, products } = store;
 
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-zinc-950 text-white">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-zinc-900 text-white">
       <div className="px-6 py-4">
-        <div className="text-4xl mb-2 bg-zinc-950 font-bold">{name}</div>
+        <div className="text-4xl mb-4 font-bold text-center">{name}</div>
         <p className="text-base mb-4 font-semibold">Description: {description}</p>
         <p className="text-sm mb-2 font-semibold">Seller: {seller}</p>
         <p className="text-sm mb-2 font-semibold">Location: {address}, {district}, {state}</p>

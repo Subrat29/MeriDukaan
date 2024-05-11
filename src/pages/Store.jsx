@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import StoreElement from '../components/StoreElement'; // Assuming you have a StoreElement component
+import { SectionTitle } from '../components';
 
 const Stores = () => {
   const [stores, setStores] = useState([]);
@@ -62,11 +63,11 @@ const Stores = () => {
 
   return (
     <div className="container mx-auto">
-      <h2 className="text-3xl font-bold mb-4">Stores</h2>
+      <SectionTitle title="Stores" path="Home | Stores" />
       {/* Filter options */}
-      <div className="flex flex-col md:flex-row gap-4 mb-4">
+      <div className="flex flex-col my-4 md:flex-row gap-4 mb-4">
         <div className="flex-grow">
-          <label htmlFor="stateSelect" className="block mb-2 font-semibold">Select State:</label>
+          <label htmlFor="stateSelect" className="block mb-2 font-semibold text-grey-350 text-xl">Select State:</label>
           <select id="stateSelect" onChange={handleStateChange} value={selectedState} className="w-full px-4 py-2 border rounded-md">
             <option value="all">All States</option>
             {states.map(state => (
@@ -75,7 +76,7 @@ const Stores = () => {
           </select>
         </div>
         <div className="flex-grow">
-          <label htmlFor="districtSelect" className="block mb-2 font-semibold">Select District:</label>
+          <label htmlFor="districtSelect" className="block mb-2 font-semibold text-grey-350 text-xl">Select District:</label>
           <select id="districtSelect" onChange={(e) => setSelectedDistrict(e.target.value)} value={selectedDistrict} className="w-full px-4 py-2 border rounded-md">
             <option value="all">All Districts</option>
             {selectedState !== 'all' && states.find(state => state.name === selectedState)?.districts.map(district => (
@@ -84,7 +85,7 @@ const Stores = () => {
           </select>
         </div>
         <div className="flex-grow">
-          <label htmlFor="minRatingInput" className="block mb-2 font-semibold">Minimum Rating:</label>
+          <label htmlFor="minRatingInput" className="block mb-2 font-semibold text-grey-350 text-xl">Minimum Rating:</label>
           <input type="number" id="minRatingInput" value={minRating} onChange={(e) => setMinRating(e.target.value)} className="w-full px-4 py-2 border rounded-md" />
         </div>
       </div>
