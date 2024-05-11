@@ -28,10 +28,12 @@ npm start
 - Advanced Search and Filters: A powerful search engine with filters to sort products by price, date of addition, category, brand, gender, and stock availability.
 - Category and Brand Sorting: Intuitive categorization and brand-specific pages for easier navigation and product discovery.
 - Gender-specific Collections: Separate sections for men's, women's, and unisex items, tailored to suit different gender preferences.
-- Stock Indicators: Real-time updates on product availability to ensure customers are informed about in-stock items.
+- Stock Indicators: Real-time updates on product availability to ensure customers are informed about in-stock items. 
 
 Technologies Used:
-Front-End: HTML5, CSS3, JavaScript (with React.js framework)
+Front-End: HTML,CSS3 JavaScript, React.js
+Back-End: Node.js, Express.js, Json Server
+Database: MongoDb (in Local Server)
 
 # Responsive Design:
 Mobile-First Approach: The website is designed to be fully responsive and mobile-friendly, ensuring a consistent experience across all devices.
