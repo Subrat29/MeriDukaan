@@ -53,7 +53,7 @@
       "price": {
         "current": {
           "value": 110,
-          "text": "$110.00"
+          "text": "₹230.00"
         }
       },
       "brandName": "Nike",
@@ -78,7 +78,7 @@
           "price": {
             "current": {
               "value": 115,
-              "text": "$115.00"
+              "text": "₹115.00"
             }
           },
           "rating": 4.5,
@@ -111,7 +111,7 @@
           "price": {
             "current": {
               "value": 105,
-              "text": "$105.00"
+              "text": "₹400.00"
             }
           },
           "rating": 4.2,
@@ -191,7 +191,7 @@
       "price": {
         "current": {
           "value": 110,
-          "text": "$110.00"
+          "text": "₹195.00"
         }
       },
       "brandName": "Nike",
@@ -216,7 +216,7 @@
           "price": {
             "current": {
               "value": 120,
-              "text": "$120.00"
+              "text": "₹120.00"
             }
           },
           "rating": 4.7,
@@ -249,7 +249,7 @@
           "price": {
             "current": {
               "value": 115,
-              "text": "$115.00"
+              "text": "₹700.00"
             }
           },
           "rating": 4.6,
@@ -327,7 +327,7 @@
       "price": {
         "current": {
           "value": 49,
-          "text": "$49.00"
+          "text": "₹49.00"
         }
       },
       "brandName": "Good For Nothing",
@@ -352,7 +352,7 @@
           "price": {
             "current": {
               "value": 45,
-              "text": "$45.00"
+              "text": "₹45.00"
             }
           },
           "rating": 4.8,
@@ -385,7 +385,7 @@
           "price": {
             "current": {
               "value": 50,
-              "text": "$50.00"
+              "text": "₹50.00"
             }
           },
           "rating": 4.6,
@@ -463,7 +463,7 @@
       "price": {
         "current": {
           "value": 230,
-          "text": "$230.00"
+          "text": "₹230.00"
         }
       },
       "brandName": "The North Face",
@@ -488,7 +488,7 @@
           "price": {
             "current": {
               "value": 180,
-              "text": "$180.00"
+              "text": "₹180.00"
             }
           },
           "rating": 4.7,
@@ -521,7 +521,7 @@
           "price": {
             "current": {
               "value": 195,
-              "text": "$195.00"
+              "text": "₹195.00"
             }
           },
           "rating": 4.8,
@@ -602,7 +602,7 @@
       "price": {
         "current": {
           "value": 110,
-          "text": "$110.00"
+          "text": "₹300.00"
         }
       },
       "brandName": "Nike",
@@ -627,7 +627,7 @@
           "price": {
             "current": {
               "value": 115,
-              "text": "$115.00"
+              "text": "₹115.00"
             }
           },
           "rating": 4.5,
@@ -660,7 +660,7 @@
           "price": {
             "current": {
               "value": 105,
-              "text": "$105.00"
+              "text": "₹105.00"
             }
           },
           "rating": 4.2,
@@ -1013,7 +1013,7 @@
           "price": {
             "value": 100,
             "currency": "USD",
-            "text": "$100.00"
+            "text": "₹100.00"
           },
           "imageUrl": "images.asos-media.com/products/adidas-originals-superstar-sneakers-in-white-and-gold/204525439-1-gold",
           "rating": 4.5,
@@ -1055,6 +1055,89 @@
         "Sunday": "Closed"
       },
       "rating": 3,
+      "totalReviewCount": 102,
+      "products": [
+        {
+          "id": 204525438,
+          "name": "Nike Air Force 1 '07 sneakers in white and black",
+          "category": "Shoes",
+          "price": {
+            "value": 110,
+            "currency": "USD",
+            "text": "₹110.00"
+          },
+          "imageUrl": "images.asos-media.com/products/nike-air-force-1-07-sneakers-in-white-and-black/204525438-1-black",
+          "rating": 5,
+          "reviews": [
+            {
+              "username": "Errol Grabber",
+              "rating": 1,
+              "reviewText": "I am not happy with this product...!!!",
+              "date": "January 31, 2022"
+            },
+            {
+              "username": "Kristofer Comi",
+              "rating": 5,
+              "reviewText": "Excellent product...!!!",
+              "date": "January 31, 2022"
+            },
+            {
+              "username": "Luciano Haarman",
+              "rating": 5,
+              "reviewText": "I am very happy...!!!",
+              "date": "January 31, 2022"
+            }
+          ]
+        },
+        {
+          "id": 204525439,
+          "name": "Adidas Originals Superstar sneakers in white and gold",
+          "category": "Shoes",
+          "price": {
+            "value": 100,
+            "currency": "USD",
+            "text": "₹100.00"
+          },
+          "imageUrl": "images.asos-media.com/products/adidas-originals-superstar-sneakers-in-white-and-gold/204525439-1-gold",
+          "rating": 4.5,
+          "reviews": [
+            {
+              "username": "Maria Smith",
+              "rating": 5,
+              "reviewText": "Love these shoes! Very comfortable and stylish.",
+              "date": "February 15, 2022"
+            },
+            {
+              "username": "John Doe",
+              "rating": 4,
+              "reviewText": "Good quality but a bit pricey.",
+              "date": "February 10, 2022"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UGO_LEQbG8zMttkPJ-dHb",
+      "name": "Rajat Store",
+      "description": "A shop for top brand clothings.",
+      "seller": "Rajat",
+      "state": "Uttarakhand",
+      "district": "Dehradun",
+      "adress": "Dehradun, Uttarakhand",
+      "phone": "7889454879",
+      "email": "rajat@test.com",
+      "website": "www.abcshop.com",
+      "openingHours": {
+        "Monday": "9:00 AM - 6:00 PM",
+        "Tuesday": "9:00 AM - 6:00 PM",
+        "Wednesday": "9:00 AM - 6:00 PM",
+        "Thursday": "9:00 AM - 6:00 PM",
+        "Friday": "9:00 AM - 6:00 PM",
+        "Saturday": "9:00 AM - 6:00 PM",
+        "Sunday": "Closed"
+      },
+      "rating": 4.8,
       "totalReviewCount": 102,
       "products": [
         {
@@ -1116,90 +1199,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "q1Re4sygCVIFBPmoIFgPr",
-      "name": "Rajat Store",
-      "description": "This shop is well known shop in surat city, it has highly rated Products...",
-      "seller": "Rajat",
-      "state": "Uttarakhand",
-      "district": "Dehradun",
-      "adress": "Graphic Era City, Dehradun",
-      "phone": "9649389388",
-      "email": "rajat@gmail.com",
-      "website": "www.rajatshop.com",
-      "openingHours": {
-        "Monday": "9:00 AM - 6:00 PM",
-        "Tuesday": "9:00 AM - 6:00 PM",
-        "Wednesday": "9:00 AM - 6:00 PM",
-        "Thursday": "9:00 AM - 6:00 PM",
-        "Friday": "9:00 AM - 6:00 PM",
-        "Saturday": "9:00 AM - 6:00 PM",
-        "Sunday": "Closed"
-      },
-      "rating": 5,
-      "totalReviewCount": 204,
-      "products": [
-        {
-          "id": 204525438,
-          "name": "Nike Air Force 1 '07 sneakers in white and black",
-          "category": "Shoes",
-          "price": {
-            "value": 110,
-            "currency": "USD",
-            "text": "$110.00"
-          },
-          "imageUrl": "images.asos-media.com/products/nike-air-force-1-07-sneakers-in-white-and-black/204525438-1-black",
-          "rating": 5,
-          "reviews": [
-            {
-              "username": "Errol Grabber",
-              "rating": 1,
-              "reviewText": "I am not happy with this product...!!!",
-              "date": "January 31, 2022"
-            },
-            {
-              "username": "Kristofer Comi",
-              "rating": 5,
-              "reviewText": "Excellent product...!!!",
-              "date": "January 31, 2022"
-            },
-            {
-              "username": "Luciano Haarman",
-              "rating": 5,
-              "reviewText": "I am very happy...!!!",
-              "date": "January 31, 2022"
-            }
-          ]
-        },
-        {
-          "id": 204525439,
-          "name": "Adidas Originals Superstar sneakers in white and gold",
-          "category": "Shoes",
-          "price": {
-            "value": 100,
-            "currency": "USD",
-            "text": "$100.00"
-          },
-          "imageUrl": "images.asos-media.com/products/adidas-originals-superstar-sneakers-in-white-and-gold/204525439-1-gold",
-          "rating": 4.5,
-          "reviews": [
-            {
-              "username": "Maria Smith",
-              "rating": 5,
-              "reviewText": "Love these shoes! Very comfortable and stylish.",
-              "date": "February 15, 2022"
-            },
-            {
-              "username": "John Doe",
-              "rating": 4,
-              "reviewText": "Good quality but a bit pricey.",
-              "date": "February 10, 2022"
-            }
-          ]
-        }
-      ]
     }
-
   ]
 }
