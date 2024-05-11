@@ -1,109 +1,106 @@
-/* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from "react";
-import { Filters, Pagination, ProductElement, SectionTitle } from "../components";
-import "../styles/Shop.css";
-import axios from "axios";
-import { useLoaderData, useNavigate, useSearchParams } from "react-router-dom";
-import { nanoid } from "nanoid";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import StoreElement from '../components/StoreElement'; // Assuming you have a StoreElement component
 
-export const shopLoader = async ({ request }) => {
-    const params = Object.fromEntries([...new URL(request.url).searchParams.entries()]);
-    // /posts?title=json-server&author=typicode
-    // GET /posts?_sort=views&_order=asc
-    // GET /posts/1/comments?_sort=votes&_order=asc
+const Stores = () => {
+  const [stores, setStores] = useState([]);
+  const [filteredStores, setFilteredStores] = useState([]);
+  const [selectedState, setSelectedState] = useState('all');
+  const [selectedDistrict, setSelectedDistrict] = useState('all');
+  const [minRating, setMinRating] = useState(0);
 
-    let mydate = Date.parse(params.date);
+  const states = [
+    {
+      name: 'Haryana',
+      districts: ['Gurugram', 'Faridabad', 'Panipat', 'Sonipat', 'Ambala', 'Hisar']
+    },
+    {
+      name: 'Gujarat',
+      districts: ['Ahmedabad', 'Surat', 'Vadodara', 'Rajkot', 'Bhavnagar', 'Jamnagar']
+    },
+    {
+      name: 'Uttarakhand',
+      districts: ['Dehradun', 'Haridwar', 'Roorkee', 'Haldwani', 'Nainital', 'Mussoorie']
+    },
+  ];
 
-    if (mydate && !isNaN(mydate)) {
-        // The date is valid
-        mydate = new Date(mydate).toISOString();
-    } else {
-        mydate = "";
-    }
-
-    const filterObj = {
-        // brand: params.brand ?? "all",
-        // category: params.category ?? "all",
-        date: mydate ?? "",
-        // gender: params.gender ?? "all",
-        state: params.state ?? "all",
-        district: params.district ?? "all",
-        rating: params.rating ?? "",
-        price: params.price ?? "all",
-        search: params.search ?? "",
-        // in_stock: params.stock === undefined ? false : true,
-        current_page: Number(params.page) || 1,
+  useEffect(() => {
+    const fetchStores = async () => {
+      try {
+        const response = await axios.get('http://localhost:8080/shops'); // Adjust the URL accordingly
+        setStores(response.data);
+      } catch (error) {
+        console.error('Error fetching stores:', error);
+      }
     };
 
-    // set params in get apis
-    let parameter =
-        `?_start=${(filterObj.current_page - 1) * 10}&_limit=4` + // pre defined that limit of response is 10 & page number count 1
-        // (filterObj.brand !== "all" ? `&brandName=${filterObj.brand}` : "") +
-        // (filterObj.category !== "all" ? `&category=${filterObj.category}` : "") +
-        // (filterObj.gender !== "all" ? `&gender=${filterObj.gender}` : ``) +
-        (filterObj.state != "all" ? `&state=${filterObj.state}` : ``) +
-        (filterObj.district != "all" ? `&district=${filterObj.district}` : ``) +
-        (filterObj.search != "" ? `&q=${encodeURIComponent(filterObj.search)}` : ``) +
-        (filterObj.rating ? `&_sort=rating.current.value` : "") + // Check if the rating exists, then sort it in ascending rating. After that, the API response will be modified if descending order or any other filter is selected.
-        // (filterObj.in_stock ? `&isInStock` : "") +
-        (filterObj.price !== "all" ? `&price.current.value_lte=${filterObj.price}` : ``) +
-        (filterObj.date ? `&productionDate=${filterObj.date}` : ``); // It only matched exact for the date and time.
+    fetchStores();
+  }, []);
 
-    try {
-        const response = await axios(`http://localhost:8080/stores${parameter}`);
-        let data = response.data;
+  useEffect(() => {
+    // Filter stores based on selectedState, selectedDistrict, and minRating
+    let filtered = stores.filter(store => {
+      if (selectedState !== 'all' && store.state !== selectedState) {
+        return false;
+      }
+      if (selectedDistrict !== 'all' && store.district !== selectedDistrict) {
+        return false;
+      }
+      if (store.rating < minRating) {
+        return false;
+      }
+      return true;
+    });
 
-        // sorting in descending order
-        if (
-            filterObj.order &&
-            !(filterObj.order === "asc" || filterObj.order === "price low")
-        )
-            data.sort((a, b) => b.price.current.value - a.price.current.value);
-        return {
-            productsData: data,
-            productsLength: data.length,
-            page: filterObj.current_page,
-        };
-    } catch (error) {
-        console.log(error.response);
-    }
-    // /posts?views_gte=10
+    setFilteredStores(filtered);
+  }, [stores, selectedState, selectedDistrict, minRating]);
 
-    return null;
+  const handleStateChange = (e) => {
+    setSelectedState(e.target.value);
+    setSelectedDistrict('all'); // Reset district filter when state changes
+  };
+
+  return (
+    <div className="container mx-auto">
+      <h2 className="text-3xl font-bold mb-4">Stores</h2>
+      {/* Filter options */}
+      <div className="flex flex-col md:flex-row gap-4 mb-4">
+        <div className="flex-grow">
+          <label htmlFor="stateSelect" className="block mb-2 font-semibold">Select State:</label>
+          <select id="stateSelect" onChange={handleStateChange} value={selectedState} className="w-full px-4 py-2 border rounded-md">
+            <option value="all">All States</option>
+            {states.map(state => (
+              <option key={state.name} value={state.name}>{state.name}</option>
+            ))}
+          </select>
+        </div>
+        <div className="flex-grow">
+          <label htmlFor="districtSelect" className="block mb-2 font-semibold">Select District:</label>
+          <select id="districtSelect" onChange={(e) => setSelectedDistrict(e.target.value)} value={selectedDistrict} className="w-full px-4 py-2 border rounded-md">
+            <option value="all">All Districts</option>
+            {selectedState !== 'all' && states.find(state => state.name === selectedState)?.districts.map(district => (
+              <option key={district} value={district}>{district}</option>
+            ))}
+          </select>
+        </div>
+        <div className="flex-grow">
+          <label htmlFor="minRatingInput" className="block mb-2 font-semibold">Minimum Rating:</label>
+          <input type="number" id="minRatingInput" value={minRating} onChange={(e) => setMinRating(e.target.value)} className="w-full px-4 py-2 border rounded-md" />
+        </div>
+      </div>
+
+      {/* Display filtered stores */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {filteredStores.length > 0 ? (
+          filteredStores.map(store => (
+            <StoreElement key={store.id} store={store} />
+          ))
+        ) : (
+          <p className="text-lg text-center">No stores found for the selected filters.</p>
+        )}
+      </div>
+    </div>
+  );
 };
 
-const Store = () => {
-    const productLoaderData = useLoaderData();
-
-    return (
-        <>
-            <SectionTitle title="Stores" path="Home | Stores" />
-            <div className="max-w-7xl mx-auto mt-5">
-                <Filters />
-                {productLoaderData.productsData.length === 0 && (
-                    <h2 className="text-accent-content text-center text-4xl my-10">
-                        No products found for this filter
-                    </h2>
-                )}
-                <div className="grid grid-cols-4 px-2 gap-y-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 shop-products-grid">
-                    {productLoaderData.productsData.length !== 0 &&
-                        productLoaderData.productsData.map((product) => (
-                            <ProductElement
-                                key={nanoid()}
-                                id={product.id}
-                                title={product.name}
-                                image={product.imageUrl}
-                                rating={product.rating}
-                                price={product.price.current.value}
-                                // brandName={product.brandName}
-                            />
-                        ))}
-                </div>
-            </div>
-
-            <Pagination />
-        </>
-    );
-};
-
-export default Store;
+export default Stores;
