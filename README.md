@@ -1,11 +1,17 @@
 # MeriDukaan
 
+## Home Page
 ![Home Page](./src/assets/Home.jpg)
+## Products Page
 ![Products Page](<./src/assets/products%20(2).jpg>)
+## Stores Page
 ![Store Page](./src/assets/Store.jpg)
+## Become a Seller Page
 ![Become a Seller Page](./src/assets/seller.jpg)
-![Add Products](./src/assets/addProducts.jpg)
+## Add Shops Page
 ![Add Shops](./src/assets/AddShops.jpg)
+## Add Products Page
+![Add Products](./src/assets/addProducts.jpg)
 
 # Project Features
 
