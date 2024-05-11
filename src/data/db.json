@@ -952,64 +952,87 @@
   ],
   "shops": [
     {
-      "id": "kMirDQvDd9UBH6aPBIa0u",
-      "name": "ss2",
-      "seller": "shdjhsdsad",
-      "description": "sadasdasdasd",
-      "email": "ss2@s.com",
-      "phone": "2323233",
-      "adress": "sdfsdfsdfdsffsdff",
-      "state": "Uttar Pradesh",
-      "district": "Aligarh",
-      "products": []
-    },
-    {
-      "id": "kmeDE2l8J0B_OGBkYx0rs",
-      "name": "sss3",
-      "seller": "sdasdasdasdsad",
-      "description": "asdasdasdasd",
-      "email": "asd@s.com",
-      "phone": "34334343",
-      "adress": "sgfgsdfsdfsdf",
-      "state": "Uttar Pradesh",
-      "district": "Aligarh",
-      "products": []
-    },
-    {
-      "id": "rU1MH3sV5P2iSzGKQZwyW",
-      "name": "dfsdfsdfsdfsdfsdf",
-      "seller": "dsfsdfsfsdfsdfdf",
-      "description": "sdfsdfsdfsdfsdfsdf",
-      "email": "subratyadav29@gmail.com",
-      "phone": "07820043752",
-      "adress": "Shastri Nagar, Agra",
-      "state": "Uttar Pradesh",
-      "district": "agra",
-      "products": []
-    },
-    {
-      "id": "-SqjYOXSLHv1LBz-20w52",
-      "name": "dfsdfsdfsdfsdfsdf",
-      "seller": "dsfsdfsfsdfsdfdf",
-      "description": "sdfsdfsdfsdfsdfsdf",
-      "email": "subratyadav29@gmail.com",
-      "phone": "07820043752",
-      "adress": "Shastri Nagar, Agra",
-      "state": "Uttar Pradesh",
-      "district": "agra",
-      "products": []
-    },
-    {
-      "id": "mS7WrQGkVGlBtVP0C_uiz",
-      "name": "qeweweqrwer",
-      "seller": "werwerwerwer",
-      "description": "werwerwerwer",
-      "email": "diya@gmail.com",
-      "phone": "17820043752",
-      "adress": "Agradjlfkjdfjjkkj",
-      "state": "Uttar Pradesh",
-      "district": "kanpur",
-      "products": []
+      "id": "PUi3wPUkZLM2c4MsXrETg",
+      "name": "shop1",
+      "description": "sbkjsdvsjkddf",
+      "seller": "seller1",
+      "state": "Bihar",
+      "district": "Patna",
+      "adress": "djfkdj fkdsjfkd fk dkjf ",
+      "phone": "1212121",
+      "email": "s1@s.com",
+      "website": "www.abcshop.com",
+      "openingHours": {
+        "Monday": "9:00 AM - 6:00 PM",
+        "Tuesday": "9:00 AM - 6:00 PM",
+        "Wednesday": "9:00 AM - 6:00 PM",
+        "Thursday": "9:00 AM - 6:00 PM",
+        "Friday": "9:00 AM - 6:00 PM",
+        "Saturday": "9:00 AM - 6:00 PM",
+        "Sunday": "Closed"
+      },
+      "rating": 4.8,
+      "totalReviewCount": 102,
+      "products": [
+        {
+          "id": 204525438,
+          "name": "Nike Air Force 1 '07 sneakers in white and black",
+          "category": "Shoes",
+          "price": {
+            "value": 110,
+            "currency": "USD",
+            "text": "$110.00"
+          },
+          "imageUrl": "images.asos-media.com/products/nike-air-force-1-07-sneakers-in-white-and-black/204525438-1-black",
+          "rating": 5,
+          "reviews": [
+            {
+              "username": "Errol Grabber",
+              "rating": 1,
+              "reviewText": "I am not happy with this product...!!!",
+              "date": "January 31, 2022"
+            },
+            {
+              "username": "Kristofer Comi",
+              "rating": 5,
+              "reviewText": "Excellent product...!!!",
+              "date": "January 31, 2022"
+            },
+            {
+              "username": "Luciano Haarman",
+              "rating": 5,
+              "reviewText": "I am very happy...!!!",
+              "date": "January 31, 2022"
+            }
+          ]
+        },
+        {
+          "id": 204525439,
+          "name": "Adidas Originals Superstar sneakers in white and gold",
+          "category": "Shoes",
+          "price": {
+            "value": 100,
+            "currency": "USD",
+            "text": "$100.00"
+          },
+          "imageUrl": "images.asos-media.com/products/adidas-originals-superstar-sneakers-in-white-and-gold/204525439-1-gold",
+          "rating": 4.5,
+          "reviews": [
+            {
+              "username": "Maria Smith",
+              "rating": 5,
+              "reviewText": "Love these shoes! Very comfortable and stylish.",
+              "date": "February 15, 2022"
+            },
+            {
+              "username": "John Doe",
+              "rating": 4,
+              "reviewText": "Good quality but a bit pricey.",
+              "date": "February 10, 2022"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

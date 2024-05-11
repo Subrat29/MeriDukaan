@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="hero bg-base-200 bg-blend-overlay">
       <div className="hero-content text-center">
         <div className="max-w-xl">
-          <h1 className="text-6xl font-bold max-md:text-4xl text-accent-content">Best Clothing Shop Of The Year!</h1>
+          <h1 className="text-6xl font-bold max-md:text-4xl text-accent-content">Connect with local stores!</h1>
           <p className="py-6 text-2xl max-md:text-lg text-accent-content">
             Your local connection to neighborhood shops. Discover and support your city's hidden gems with us!
           </p>
